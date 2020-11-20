@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Build a Survey Form</title>
+</head>
+
+<body>
+
+
+    <header class="container">
+        <h1 id="title" class="text-center">Build a Survey Form</h1>
+        <p id="description" class="text-center">
+            Please fill the form below
+        </p>
+    </header>
+
+    <main class="container">
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+
+            <div class="form-group">
+                <p>What is your job?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select job</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend software to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="yes" type="radio" class="input-radio" checked />Yes</label>
+                <label>
+                    <input name="user-recommend" value="no" type="radio" class="input-radio" />No</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What is your favorite programming languages?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="c#">C#</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What would you like to see improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label><input name="prefer" value="front-end-projects" type="checkbox"
+                        class="input-checkbox" />Front-end Projects</label>
+                <label><input name="prefer" value="additional-courses" type="checkbox"
+                        class="input-checkbox" />Additional Courses</label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea w-100" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button btn btn-primary">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
